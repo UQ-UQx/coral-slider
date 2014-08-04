@@ -1,0 +1,40 @@
+<!doctype html>
+<html ng-app="coralSlider">
+  <head>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="bootstrap-slider.js"></script>
+    <script src="coral-slider.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-slider.css">
+    <link rel="stylesheet" href="coral-slider.css">
+  </head>
+  <body>
+    <div ng-controller="GrowthCtrl" class="coral-slider-container">
+      <div class="control-container">
+        <div class="title">Reef Slider</div>
+        <div class="label-container">
+          <div class="control-label">Calc</div>
+          <div class="control-label border-at-top">Growth Rate</div>
+          <div class="control-label">Decalc</div>
+        </div>
+        <div class="slider-container">
+          <div calci-slider id="calci-slider" model="calciLevel" type="text" value="" data-slider-min="100" data-slider-max="0" data-slider-step="1" data-slider-value="50" data-slider-orientation="vertical" data-slider-selection="after" data-slider-tooltip="show"></div>
+          <div class="growth-rate-display" two-way-progress>
+            <div class="growth-rate-progress growth-rate-positive" ng-style="{'height': positiveGrowthHeight, 'top': positiveGrowthTop};"></div>
+            <div class="growth-rate-progress growth-rate-negative" ng-style="{'height': negativeGrowthHeight};"></div>
+            <div class="growth-rate-scale positive-label">+1.0</div>
+            <div class="growth-rate-scale zero-label">0</div/>
+            <div class="growth-rate-scale negative-label">-1.0</div>
+          </div>
+          <div calci-slider id="decali-slider" model="decalciLevel" type="text" value="" data-slider-min="100" data-slider-max="0" data-slider-step="1" data-slider-value="50" data-slider-orientation="vertical" data-slider-selection="after" data-slider-tooltip="show"></div>
+        </div>
+      </div>
+      <div class="coral-container">
+        <div coral-vid curr-time="coralPosition" vid-name="coral-slider-out_0"></div>
+      </div>
+      <!--<h1>{{coralPosition}}</h1>-->
+    </div>
+  </body>
+</html>

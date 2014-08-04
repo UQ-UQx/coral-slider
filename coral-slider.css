@@ -1,0 +1,126 @@
+.coral-slider-container {
+	width: 1000px;
+	height: 360px;
+}
+
+.control-container {
+	height: 360px;
+	width: 172px;
+	float: left;
+	display: block;
+}
+
+.control-container .title {
+	height: 50px;
+	margin-top: 10px;
+	width: 100%;
+	float: left;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.control-container .label-container {
+	height: 40px;
+	width: 172px;
+	display: block;
+	float: left;
+	font-weight: bold;
+}
+
+.control-container .label-container .control-label {
+	font-size: 0.9em;
+	width: 33%;
+	float: left;
+	text-align: center;
+}
+
+.control-container .label-container .control-label.border-at-top {
+	border-top: solid;
+	border-width: 2px;
+	padding-top: 10px;
+	margin-top: -12px;
+}
+
+.slider-container {
+	width: 172px;
+	height: 260px;
+	float: left;
+	display: block;
+}
+
+.coral-container {
+	width: 640px;
+	height: 360px;
+	background-color: #000;
+	float: left;
+	display: block;
+}
+
+.coral-container video {
+	height: 360px;
+	width: 640px;
+}
+
+.slider.slider-vertical {
+	padding-bottom: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 10px;
+	height: 240px;
+	float: left;
+	display: block;
+}
+
+.slider-selection {
+	background: #BABABA;
+}
+
+.growth-rate-display {
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 240px;
+	width: 40px;
+	display: block;
+	position: relative;
+	float: left;
+	border-radius: 6px; 
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px;
+	overflow: hidden;
+	background-color: #F7F7F7;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.growth-rate-display .growth-rate-progress {
+	position: absolute;
+	top: 120px;
+	width: 100%;
+	height: 0px;
+	background-color: #BABABA;
+}
+
+.growth-rate-display .growth-rate-scale {
+	position: absolute;
+	z-index: 100;
+	width: 100%;
+	text-align: center;
+	font-size: 1em;
+	height: 20px;
+	font-weight: bold;
+}
+
+.growth-rate-display .growth-rate-scale.positive-label {
+	top: 5px;
+}
+
+.growth-rate-display .growth-rate-scale.zero-label {
+	top: 110px;
+}
+
+.growth-rate-display .growth-rate-scale.negative-label {
+	top: 215px;
+}
